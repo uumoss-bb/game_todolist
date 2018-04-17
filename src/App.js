@@ -52,12 +52,13 @@ class App extends Component {
 	playedGame (gameIndex) {
 
 		let games = this.state.games
+		//finds the one we selected
 		games = games.filter((game, i) => i === gameIndex)
 
 		let playedGames = this.state.playedGames
 		playedGames.push(games[0])
-
-		games = games.filter((game, i) => i !== gameIndex)
+		//then its all the games but the selected
+		games = this.state.games.filter((game, i) => i !== gameIndex)
 
 
 		this.setState({
@@ -73,18 +74,14 @@ class App extends Component {
 
 			<section id="wishList">
 
+				<h1>Games to Play</h1>
+
 				<form>
 
-					<label>
+					<input type = "text" name = "game" onChange = { (e) => newInput = e.target.value}/>
 
-					Games to play :
-
-						<input type = "text" name = "game" onChange = { (e) => newInput = e.target.value}/>
-
-						<input id = "submit" type = "submit" name = "submit" value = "add"
-						onClick = { (e) => this.addGame(e, newInput)}/>
-
-					</label>
+					<input id = "submit" type = "submit" name = "submit" value = "add"
+					onClick = { (e) => this.addGame(e, newInput)}/>
 
 				</form>
 

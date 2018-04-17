@@ -3,10 +3,9 @@
 	float:left;
 	margin-top: 10%;
 	margin-left: 5%;
-
 }
-#wishList form {
-	margin-left: 10%;
+#wishList input:first-child {
+	margin-left: 25%;
 	margin-bottom: 5%;
 }
 #submit {
@@ -22,14 +21,13 @@
 	box-shadow: 0px 1px 5px #121212;
 }
 
+
+
 #gamesPlayed {
 	width: 40%;
 	float: right;
 	margin-top: 10%;
 	margin-right: 5%;
-}
-#gamesPlayed h1 {
-	text-align: center;
 }
 
 
