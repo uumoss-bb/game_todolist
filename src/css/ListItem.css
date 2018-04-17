@@ -1,0 +1,78 @@
+#wishList {
+	width:40%;
+	float:left;
+	margin-top: 10%;
+	margin-left: 5%;
+
+}
+#wishList form {
+	margin-left: 10%;
+	margin-bottom: 5%;
+}
+#submit {
+	width: 10%;
+	font-size: 1vw;
+	color: #121212;
+	background-color: #c8c8c8;
+	padding: 1%;
+	border-radius: 50px;
+	box-shadow: 0px 1px 5px #121212;
+}
+#submit:focus{
+	box-shadow: 0px 1px 5px #121212;
+}
+
+#gamesPlayed {
+	width: 40%;
+	float: right;
+	margin-top: 10%;
+	margin-right: 5%;
+}
+#gamesPlayed h1 {
+	text-align: center;
+}
+
+
+.listItem_container {
+	height: 50px;
+}
+.listItem {
+	width:50%;
+	position: relative;
+	z-index: 3;
+	border-radius: 10px;
+	margin-left: 25%;
+}
+.listItem_container:hover > .deleteBtn{
+	left: 370px;
+}
+.listItem_container:hover > .playedBtn{
+	left: 380px;
+}
+.listItem p {
+	padding: 5%;
+}
+.deleteBtn {
+	width:10%;
+	transition: left 1.5s;
+	z-index: 2;
+	position: relative;
+	left: 300px;
+	bottom: 53px;
+	border-radius: 10px;
+}
+.deleteBtn:hover {
+	box-shadow: 0px 1px 5px #121212;
+}
+.playedBtn {
+	width:15%;
+	transition: left 3s;
+	z-index: 1;
+	position: relative;
+	left: 220px;
+	bottom: 53px;
+	border-radius: 10px;
+}
+.playedBtn:hover {
+	box-shadow: 0px 1px 5px #121212;
+}
